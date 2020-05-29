@@ -1,0 +1,12 @@
+G:\C#_Project\20200301_CADC\CADC\bin\Debug\Gateway.dll
+G:\C#_Project\20200301_CADC\CADC\bin\Debug\Gateway.pdb
+G:\C#_Project\20200301_CADC\CADC\Gateway\obj\Debug\Gateway.csprojAssemblyReference.cache
+G:\C#_Project\20200301_CADC\CADC\Gateway\obj\Debug\Gateway.csproj.CoreCompileInputs.cache
+G:\C#_Project\20200301_CADC\CADC\Gateway\obj\Debug\Gateway.dll
+G:\C#_Project\20200301_CADC\CADC\Gateway\obj\Debug\Gateway.pdb
+E:\WORK\Task\C#\20200301_CADC\CADC\bin\Debug\Gateway.dll
+E:\WORK\Task\C#\20200301_CADC\CADC\bin\Debug\Gateway.pdb
+E:\WORK\Task\C#\20200301_CADC\CADC\Gateway\obj\Debug\Gateway.csprojAssemblyReference.cache
+E:\WORK\Task\C#\20200301_CADC\CADC\Gateway\obj\Debug\Gateway.csproj.CoreCompileInputs.cache
+E:\WORK\Task\C#\20200301_CADC\CADC\Gateway\obj\Debug\Gateway.dll
+E:\WORK\Task\C#\20200301_CADC\CADC\Gateway\obj\Debug\Gateway.pdb

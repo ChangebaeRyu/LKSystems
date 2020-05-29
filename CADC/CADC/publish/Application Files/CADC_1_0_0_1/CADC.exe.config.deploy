@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="CleanAirDustController.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <userSettings>
+        <CleanAirDustController.Properties.Settings>
+            <setting name="IsFirstInit" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="ComPort485" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="ComPort232" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="DCType1" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="DCType2" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="DCType3" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="DCType4" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="DCID1" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="DCID2" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="DCID3" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="DCID4" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="IPType" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="IPAddress" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="Subnet" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="Gateway" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="BsDNS" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="SubDNS" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="VpnNetName" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="VpnType" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="VpnMppe" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="VpnPloxy" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="VpnSvrAddr" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="VpnDnsSchDomain" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="VpnRelayPath" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="VpnUserName" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="VpnPassword" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="VpnLogFolder" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="VpnLogFileName" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="VpnLogMaxSize" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="VpnDnsServer" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="UseDC1" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="UseDC2" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="UseDC3" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="UseDC4" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="sp2HdrUnit" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="sp2ValUnit" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="sp2OffsetUnit" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="baudrate485" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="baudrate232" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="sp3HdrUnit" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="sp3ValUnit" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="sp3OffsetUnit" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="sp2Name" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="sp3Name" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="AirTimer" serializeAs="String">
+                <value>0</value>
+            </setting>
+        </CleanAirDustController.Properties.Settings>
+    </userSettings>
+</configuration>

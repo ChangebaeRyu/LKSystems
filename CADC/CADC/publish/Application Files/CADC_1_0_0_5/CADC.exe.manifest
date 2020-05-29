@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CADC.exe" version="1.0.0.5" publicKeyToken="c76486ad4241e6e1" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CADC" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="CADC.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 매니페스트 옵션
+          Windows 사용자 계정 컨트롤 수준을 변경하려면 
+          requestedExecutionLevel 노드를 다음 중 하나로 바꾸세요.
+
+          <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+          <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />
+          <requestedExecutionLevel level="highestAvailable" uiAccess="false" />
+
+          이전 버전과의 호환성을 위해 파일 및 레지스트리 가상화를 사용하려면 
+          requestedExecutionLevel 노드를 삭제하세요.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutoUpdater.dll" size="10240">
+      <assemblyIdentity name="AutoUpdater" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>YCGH1EfVbIX8mebeiIpjzlPuIZg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CADC.exe" size="1489800">
+      <assemblyIdentity name="CADC" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>oVIE2io8sJg/iihTH/c9Z8FNhpM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Ionic.Zip.Reduced.dll" size="222208">
+      <assemblyIdentity name="Ionic.Zip.Reduced" version="1.9.1.5" publicKeyToken="EDBE51AD942A3F5C" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>+NKA22GO+ZgZlikTucmvE2VtO5g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CADC.exe.config" size="5875">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>RV4Yz3JWplzxj5mdWWMF7UIXytc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=RYU\Ryu" issuerKeyHash="8ab0e708b099113973175d9b85247a08ec4f1d2e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>v0vDjGM1iuFYSp36eVQ4IAMpYYI=</DigestValue></Reference></SignedInfo><SignatureValue>hOnB5RJNBBtEh7nbjAIqMi7TZGLRkOF0JRmfsrODTDiFhXy628pY3oVg1/39yFwzj/2y4g0+LCPQvyZj3uUyYgOv9Pcoa85HsD5YRJ7KRGgXng4sh9CSLOADNFlmuQnwFb+HoX9pKHFD8y71qfmUoa4hEtJxae1j4+zoaHyzkJE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>opBR4nmjo7m+zpySIVhg5HH+V5xrr7DpdcuEeJHqvMC5lhDhjduSxQwVkpMqmIVXm+NYOzQXLHRSuoVTGhqZu8yBrRYeoHexZ9ANMkZ5t78iL/4UBageyN2ZSExv52/7/TjQziHt/sAT8fYtRAKOA+Qm/67M09aHURkC29Te1PE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8261290320385479fa9d4a58e18a35638cc34bbf" Description="" Url=""><as:assemblyIdentity name="CADC.exe" version="1.0.0.5" publicKeyToken="c76486ad4241e6e1" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=RYU\Ryu</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>lhZ/rvqect62wiU7HGUxMvDqUCk=</DigestValue></Reference></SignedInfo><SignatureValue>UiPVMEwwDM/7wIMpWV+JM1EGzqooWGIYESlXRWIVSEy+JPZy10SHqIr0gSEU0+IL/hmtQ8+lZdkg1X0vfMyTX6I/6H9fbP1BCfi1/ayjCrOEBRI6WF9mqfokz0uj72SWuCiBoCsGn4GnWojrEunKtGsgrYGsw5YMbFC4PCYUkAQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>opBR4nmjo7m+zpySIVhg5HH+V5xrr7DpdcuEeJHqvMC5lhDhjduSxQwVkpMqmIVXm+NYOzQXLHRSuoVTGhqZu8yBrRYeoHexZ9ANMkZ5t78iL/4UBageyN2ZSExv52/7/TjQziHt/sAT8fYtRAKOA+Qm/67M09aHURkC29Te1PE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBtTCCAR6gAwIBAgIQO/BO5CSgpqdJvAmU4/MnfTANBgkqhkiG9w0BAQUFADAZMRcwFQYDVQQDHg4AUgBZAFUAXABSAHkAdTAeFw0yMDA1MTUxMTI3NDZaFw0yMTA1MTUxNzI3NDZaMBkxFzAVBgNVBAMeDgBSAFkAVQBcAFIAeQB1MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCikFHieaOjub7OnJIhWGDkcf5XnGuvsOl1y4R4keq8wLmWEOGN25LFDBWSkyqYhVeb41g7NBcsdFK6hVMaGpm7zIGtFh6gd7Fn0A0yRnm3vyIv/hQFqB7I3ZlITG/nb/v9ONDOIe3+wBPx9i1EAo4D5Cb/rszT1odRGQLb1N7U8QIDAQABMA0GCSqGSIb3DQEBBQUAA4GBADoQZpH2X+DdnvdGXBtfhaLNchyGFhcsav5VpZ8w4BTQ02JtoK6PVCEyua/FH88pDpEEkZ1BuPSPN+MIveoZJcCEH4Mv36093aZPT/eOxnk5+6w7PRtlupbwhulupJuC36sv8jhH5U29QRk8zr6QHKy23b72NOaRRaIRk4VB61ew</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

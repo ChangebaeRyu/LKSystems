@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13203015-1B0C-4A32-AC69-E1BD88438F36}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CADC</RootNamespace>
+    <AssemblyName>CADC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\localhost\AutoUpdate\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/CADC/</UpdateUrl>
+    <ProductName>CADC</ProductName>
+    <PublisherName>엘케이시스템즈</PublisherName>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>20</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2C1E2C6E9E4654DB17243C10857024F36C6EFCF8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CADC_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Registers\AppData.cs" />
+    <Compile Include="Registers\ROData.cs" />
+    <Compile Include="Registers\RWData.cs" />
+    <Compile Include="CustomControl\ucPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControl\ucPanel.Designer.cs">
+      <DependentUpon>ucPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modbus\ModbusConvert.cs" />
+    <Compile Include="Modbus\ModbusRTUMaster.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SubForm\PowerOffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\PowerOffForm.Designer.cs">
+      <DependentUpon>PowerOffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\PasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\PasswordForm.Designer.cs">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\NSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\NSettingForm.Designer.cs">
+      <DependentUpon>NSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\DeviceSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\DeviceSetForm.Designer.cs">
+      <DependentUpon>DeviceSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\WorkCtrlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\WorkCtrlForm.Designer.cs">
+      <DependentUpon>WorkCtrlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\CommonUtil.cs" />
+    <EmbeddedResource Include="CustomControl\ucPanel.resx">
+      <DependentUpon>ucPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\PowerOffForm.resx">
+      <DependentUpon>PowerOffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\PasswordForm.resx">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\NSettingForm.resx">
+      <DependentUpon>NSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\DeviceSetForm.resx">
+      <DependentUpon>DeviceSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\WorkCtrlForm.resx">
+      <DependentUpon>WorkCtrlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="CADC_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arr_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arr_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emg_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emg_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prop_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIGLE%28%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIGLE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start-C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wind_01.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wind_02.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightArrow2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadc_multi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadc_single.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txt_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sw_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sw_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGrn_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGrn_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnRed_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnRed_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\air_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\air_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fw_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fw_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lot_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lot_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manual_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manual_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motor_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motor_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\work_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\air_flow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shut_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shut_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadc_multi_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cadc_single_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\air_flow_2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_0_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_15_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_30_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_45_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_60_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_75_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cap_90_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gateway\Gateway.csproj">
+      <Project>{5fa18a9b-b968-4b73-8c4a-555166568a19}</Project>
+      <Name>Gateway</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
